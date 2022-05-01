@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RE:flex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="primary-header">RE:flex</h1>
+  </header>
+  <main>
+    <section class="game-info">
+      <h2 class="game-info__header">How to play</h2>
+      <p class="game-info__message">
+        Click "Let's go!" below to start the game. you will see coloured buttons light up along-side your video below - move your arms to tap the buttons as fast as you can in quick succession. There are 30 seconds on the clock, show your reflexes!
+      </p>
+    </section>
+    <section class="game-feature">
+      <canvas class="reflex-box"></canvas>
+      <video class="player"></video>
+      <button class="start-game-btn">Let's go!</button>
+    </section>
+    <aside>
+      Current score: <span class="score-board">0</span>
+    </aside>
+    <aside>
+      Time: <span class="time-board">30</span>
+    </aside>
+    <aside class="end-game-modal">
+      <h2 class="end-game-modal__header">Nice Work!</h2>
+      <p class="end-game-modal__message">
+        Your score is: <span class="score-board">0</span>
+      </p>
+      <button class="restart-game-btn">Restart</button>
+    </aside>
+  </main>
+  <audio class="audio-asset" data-type="ding" src="./assets/audio/game-show-ding_NWM.mp3"></audio>
+  <audio class="audio-asset" data-type="music" src="./assets/audio/audioblocks-sport-electro_HkChfJjor_NWM.mp3"></audio>
+  <audio class="audio-asset" data-type="applause" src="./assets/audio/assets_audio_sound-effect-applause.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
