@@ -133,7 +133,7 @@ function processButtonPress() {
 function checkForButtonPress(updatedDetectors) {
   const buttonPressed = detectors[currentlyActiveBtn].some(
     (colourVal, index) => {
-      return Math.abs(colourVal - updatedDetectors[index]) > 70;
+      return Math.abs(colourVal - updatedDetectors[index]) > 40;
     }
   );
   buttonPressed && processButtonPress();
